@@ -141,8 +141,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 1.35;
   padding-bottom: 0.5em;
 }
-/* line 43, ../sass/screen.scss */
-.container article .info {
+/* line 41, ../sass/screen.scss */
+.container article div ul {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+/* line 42, ../sass/screen.scss */
+.container article div ul li {
+  display: inline-block;
+  float: left;
+  padding: 0.5em 0;
+  text-align: center;
+  color: #fff;
+}
+/* line 44, ../sass/screen.scss */
+.container article div ul.lang li {
+  width: 14%;
+  margin-right: 0.33%;
+  background: red;
+}
+/* line 45, ../sass/screen.scss */
+.container article div ul.lang li:last-child {
+  margin-right: 0;
+}
+/* line 47, ../sass/screen.scss */
+.container article div ul.cms li, .container article div ul.design li {
+  width: 33%;
+  background: red;
+  margin-right: 0.5%;
+}
+/* line 48, ../sass/screen.scss */
+.container article div ul.cms li:last-child, .container article div ul.design li:last-child {
+  margin-right: 0;
+}
+/* line 50, ../sass/screen.scss */
+.container article div ul.design li {
+  background: red;
+}
+/* line 54, ../sass/screen.scss */
+.container article div .info {
   border-bottom: 0.5em solid;
   border-color: #2d9edc;
 }

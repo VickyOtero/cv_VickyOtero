@@ -38,10 +38,23 @@ $gray-color:#5e5e5e;
 					p{line-height:1.35;padding-bottom:0.5em;}
 				}
 			}
-		}
+			ul{width:100%;overflow:hidden;margin-bottom:0.5em;
+				li{display:inline-block;float:left;padding:0.5em 0;text-align:center;color:$fff-color;
+				}
+				&.lang li{width:14%;margin-right:0.33%;background:red;
+					&:last-child{margin-right:0;}
+				}
+				&.cms li, &.design li{width:33%;background:red;margin-right:0.5%;
+					&:last-child{margin-right:0;}
+				}
+				&.design li{background:red;}
+				
+			}
 	
 		.info{border-bottom:0.5em solid;border-color:$primary-color;
 			
+		}
+		
 		}
 	}
 }
