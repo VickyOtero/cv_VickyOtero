@@ -29,25 +29,30 @@ $gray-color:#5e5e5e;
 			}
 		
 		div{padding:0.5em 0;
-			dl{width:100%;display:table; height:1.5em;padding:0 1em;
+			&.info{border-bottom:0.2em solid $primary-color;
+				dl{height:1.5em;padding:0;}
+				}
+			dl{width:100%;display:table; padding:1em 0;
 				dt, dd{display:table-cell;vertical-align:middle;position:relative;padding:0 0.8em;}
 				dt{width:25%;text-align:right;color:$gray-color;
 					&:after{content:'';background:$primary-color;width:1px;height:100%;position:absolute;right:0;top:0;}
 				}
-				dd{width:75%;
-					p{line-height:1.35;padding-bottom:0.5em;}
+				dd {width:75%;
+					span, p{line-height:1.35;padding-bottom:0.5em;}
+
 				}
 			}
 			ul{width:100%;overflow:hidden;margin-bottom:0.5em;
-				li{display:inline-block;float:left;padding:0.5em 0;text-align:center;color:$fff-color;
+				li{display:inline-block;float:left;padding:0.5em 0;text-align:center;color:#5b5b5b;
 				}
-				&.lang li{width:14%;margin-right:0.33%;background:red;
+				&.lang li{width:14%;margin-right:0.33%;background:hsla(0deg, 25%, 75%, 1);
 					&:last-child{margin-right:0;}
 				}
-				&.cms li, &.design li{width:33%;background:red;margin-right:0.5%;
+				&.cms li, &.design li{width:33%;margin-right:0.5%;
 					&:last-child{margin-right:0;}
 				}
-				&.design li{background:red;}
+				&.cms li{background:hsla(90deg, 25%, 75%, 1);}
+				&.design li{background:hsla(180deg, 25%, 75%,1);}
 				
 			}
 	
