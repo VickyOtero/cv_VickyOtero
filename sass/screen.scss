@@ -7,6 +7,8 @@
 $primary-color:#2d9edc;
 $fff-color:#fff;
 $gray-color:#5e5e5e;
+$silver-color:#bcbcbc;
+
 @mixin box-shadow($shadow){
 	-webkit-box-shadow:$shadow;
 	   -moz-box-shadow:$shadow;
@@ -22,12 +24,13 @@ $gray-color:#5e5e5e;
 			.last_name{font-size:350%;}
 		
 	}
-	article{
-	
-		h2{background:$primary-color;padding:1em;
+	h2{background:$primary-color;padding:1em;
 			span{color:$fff-color;text-transform:uppercase;}
 			}
+	article{
+	
 		
+
 		div{padding:0.5em 0;
 			&.info{border-bottom:0.2em solid $primary-color;
 				dl{height:1.5em;padding:0;}
@@ -55,11 +58,31 @@ $gray-color:#5e5e5e;
 				&.design li{background:hsla(180deg, 25%, 75%,1);}
 				
 			}
-	
-		.info{border-bottom:0.5em solid;border-color:$primary-color;
-			
-		}
 		
+		}
+		&.lang{
+			div{
+				h3{width:25%;float:left;display:table;height:3em;text-align:center;
+					span{display:table-cell;vertical-align:middle;}
+				}
+
+				dl{width:75%;
+					dt:after{content:none;}
+				}
+
+			}
+		}
+		&.experience{
+			div{
+				h3{display:table;height:3.5em;text-align:left;width:100%;background:$silver-color;
+					>span{width:25%;}
+					strong{width:75%;font-weight:bold;}
+					span, strong{display:table-cell;vertical-align:middle;
+						span{display:block;padding:0 1em;line-height:1.3;}
+					}
+
+				}
+			}
 		}
 	}
 }
